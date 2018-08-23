@@ -33,8 +33,7 @@ return;
 }
  
 //search elements in hash
-void 
-search (int value) 
+void search (int value) 
 {
 struct node *tmp; 
 int i = value % size;
@@ -46,6 +45,8 @@ if (tmp->value == value)
 printf ("%d value found\n", value); 
 return; 
 } 
+
+tmp=tmp->next;	
 }
 printf ("Not found\n");
 }
