@@ -55,6 +55,8 @@ void del (int value)
 struct node *tmp;
 int i = value % size;
 tmp = hasharray[i]; 
+	if(hasharray[i]!=NULL)
+	{
 if (hasharray[i]->value == value)
     { 
 free (hasharray[i]); 
@@ -76,6 +78,7 @@ return;
 } 
 }
 }
+	}
 printf ("Not found\n"); 
 }
 
